@@ -1,0 +1,5 @@
+.ListWithCount {
+  display: flex;
+  flex-direction: column;
+  counter-reset: list-counter;
+}

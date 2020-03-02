@@ -1,0 +1,17 @@
+.TopCrimes {
+  @media (min-width: 768px) {
+    height: 100%;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+
+    &:after {
+      content: "";
+      margin-top: 0.25rem;
+      height: 0.25rem;
+      background-color: #e63946;
+    }
+  }
+}

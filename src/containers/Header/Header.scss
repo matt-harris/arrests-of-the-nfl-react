@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.Logo {
+  width: 16rem;
+}
+
+.Header__meta {
+  margin-left: auto;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}

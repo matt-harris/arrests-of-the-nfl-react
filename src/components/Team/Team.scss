@@ -1,0 +1,13 @@
+.Team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__badge {
+    max-width: 5rem;
+  }
+
+  &__name {
+    margin-left: 1rem;
+  }
+}
