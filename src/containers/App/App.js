@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Header from '../Header/Header';
 import Main from './../Main/Main';
@@ -7,6 +7,17 @@ import TeamDetail from './../../components/TeamDetail/TeamDetail';
 import Footer from '../Footer/Footer';
 
 import './App.scss';
+
+// React router 404 page.
+const NoMatchPage = () => {
+  return (
+    <div className="PageNotFound">
+      <h2>404 - Not page not found</h2>
+
+      <Link to="/">Go to the Home page.</Link>
+    </div>
+  );
+};
 
 const App = () => (
   <div className="App">
@@ -22,7 +33,7 @@ const App = () => (
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/teams/:team" component={TeamDetail} />
-            {/* TODO {Page Not found 404 component} */}
+            <Route component={ NoMatchPage } />
           </Switch>
         </Col>
       </Row>
