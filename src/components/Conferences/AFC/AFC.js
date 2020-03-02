@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Conference from './../Conference';
-import './Conferences.scss';
+import './../Conferences.scss';
 
 const AFC = ({title, teams}) => {
 

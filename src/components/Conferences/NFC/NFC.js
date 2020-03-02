@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Conference from './../Conference';
+import './../Conferences.scss';
 
 const NFC = ({title, teams}) => {
   function sortAlpha(a, b) {
